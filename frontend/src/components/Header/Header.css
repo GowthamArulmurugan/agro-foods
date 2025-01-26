@@ -1,0 +1,23 @@
+.header-contents h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.header-contents h1 br:nth-of-type(1),
+.header-contents h1 br:nth-of-type(2) {
+    display: none; /* Hides the <br> tags for styling control */
+}
+
+.header-contents h1::before {
+    content: "Welcome To \A Gopalakrishna";
+    white-space: pre;
+    color: yellow;
+    display: block;
+}
+
+.header-contents h1::after {
+    content: "Agro foods";
+    color: white;
+    display: block;
+}
