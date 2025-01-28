@@ -1,5 +1,5 @@
 import React from 'react'
-import './PlaceOder.css'
+import './PlaceOrder.css'
 
 const PlaceOder = () => {
   return (

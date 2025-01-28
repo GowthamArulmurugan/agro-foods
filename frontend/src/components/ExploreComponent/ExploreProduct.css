@@ -1,0 +1,9 @@
+.explore-product{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.explore-product h1{
+    color: #05b99f;
+    font-weight:500;
+}
