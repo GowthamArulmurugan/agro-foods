@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Home.css'
 import Header from '../../components/Header/Header'
 import ExploreProduct from '../../components/ExploreComponent/ExploreProduct'
 
 const Home = () => {
+
+  const [category,setCategory]=useState("All");
   return (
     <div>
       <Header/>
-      <ExploreProduct></ExploreProduct>
+      <ExploreProduct category={category} setCategory={setCategory}/>
     </div>
   )
 }
