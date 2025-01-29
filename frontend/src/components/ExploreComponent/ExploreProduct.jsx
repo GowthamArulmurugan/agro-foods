@@ -6,7 +6,8 @@ const ExploreProduct = ({category,setCategory}) => {
     <div className='explore-product' id='explore-product'>
         <h1>Our Products</h1>
         <p className='explore-product-text'>Checkout our extensive range of Agro food products right from Rice, 
-        Groundnut oil, Gingelly oil, Coconut oil to all type of Flours & more</p>
+        Groundnut oil, Gingelly oil, Coconut oil to all type of Flours & more. We are helping people to improve their health with our 100% Quality Products. All products are superior in quality.
+        At most care given to maintain quality.</p>
         <div className='explore-product-list'>
             {product_list.map((item,index)=>{
                 return(
