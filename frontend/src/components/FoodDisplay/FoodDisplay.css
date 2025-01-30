@@ -14,3 +14,10 @@
     gap:30px;
     row-gap: 50px;
 }
+
+@media (max-width:1850px){
+    .item-display h2{
+        font-size: max(0vw 22);
+        font-weight: 200;
+    }
+}

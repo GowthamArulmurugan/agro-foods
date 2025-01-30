@@ -1,0 +1,31 @@
+.hr{
+    margin: 10px 0px;
+    height: 2px;
+    border: #e2e2e2;
+    border: none;
+}
+
+.about-context{
+    margin-top: 30px;
+}
+
+.about-context img{
+    height:19.59vw;
+    width: 100%;
+    margin: 29px auto;
+    background-size: contain;
+    position: relative;
+    border-radius: 50px;
+}
+
+.about-context p{
+    text-align:justify;
+    color: #808080;
+    max-width: 100%;
+    font-size: max(1.3vw,16px);
+}
+.about-context li{
+    text-align: left;
+    list-style: none;
+    margin-bottom: 10px;
+}

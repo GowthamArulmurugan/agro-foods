@@ -1,10 +1,11 @@
 .header{
-    height:33.59vw;
-    margin: 29px auto;
+    height:32.20vw;
+    width: 76vw;
+    margin: 28px auto;
     background: url('/banner.png') no-repeat;
     background-size: contain;
     position: relative;
-    border-radius: 50px;
+    border-radius: 30px;
 }
 
 .header-contents{
@@ -44,4 +45,29 @@
     background-color: white;
     font-size: max(1vw,13px);
     border-radius:50px;
+}
+
+@media (max-width:1050px){
+.header-contents{
+    max-width: 45%;
+}
+}
+
+@media (max-width:750px){
+    
+    .header-contents{
+        max-width: 65%;
+    }
+
+    .header-contents p {
+        display: none;
+    }
+
+    .header-contents button{
+        padding: 1vw 3vw;
+    }
+    .header-contents img{
+        height:1cm;
+        width: 1cm;
+    }
 }
