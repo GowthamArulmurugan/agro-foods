@@ -33,6 +33,7 @@
 }
 
 .explore-product-list-item img{
+    height: 3cm;
     width:7.5vw;
     min-width: 80px;
     cursor:pointer;

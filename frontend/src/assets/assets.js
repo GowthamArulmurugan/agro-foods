@@ -68,7 +68,7 @@ export const product_list = [
 
 export const item_list = [
     {
-        _id: "1",
+        id: "1",
         name: "ag rice",
         image: agro_1,
         price: 12,
@@ -76,7 +76,7 @@ export const item_list = [
         category: "Rice"
     },
     {
-        _id: "2",
+        id: "2",
         name: "Ag oil",
         image: agro_2,
         price: 12,
@@ -84,7 +84,7 @@ export const item_list = [
         category: "Oil"
     },
     {
-        _id: "3",
+        id: "3",
         name: "Ag Flour",
         image: agro_1,
         price: 12,
@@ -92,7 +92,7 @@ export const item_list = [
         category: "Flour"
     },
     {
-        _id: "4",
+        id: "4",
         name: "Ag Spices",
         image: agro_2,
         price: 12,
