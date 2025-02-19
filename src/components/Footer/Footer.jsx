@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-content-left">
             <img src={assets.logo} alt="" />
-            <p>hi hello how are yoi</p>
+            <p>6/24,Othiyathur Post,Gangavalli Taluk,<br></br>Salem, Gangavalli-636105,<br></br> Tamil Nadu, India</p>
             <div className="footer-social-icons">
                 <img src={assets.facebook_icon} alt="" />
                 <img src={assets.twitter_icon} alt="" />
@@ -28,8 +28,8 @@ const Footer = () => {
         <div className="footer-content-right">
             <h2>Get In Touch</h2>
             <ul>
-                <li>+9788888888</li>
-                <li>contact@sag.com</li>
+                <li>+9788309007</li>
+                <li>gopalakrishnaagrofoods@gmail.com</li>
             </ul>
         </div>
       </div>

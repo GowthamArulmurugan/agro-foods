@@ -8,6 +8,12 @@ import Spices from './Spices.png'
 import banner from './banner.png'
 import agro_1 from './agro_1.jpeg';
 import agro_2 from './agro_2.jpg';
+import agro_3 from './agro_3.jpg';
+import agro_40 from './agro_40.webp';
+import agro_11 from './agro_11.jpg';
+import agro_21 from './agro_21.jpg';
+import agro_22 from './agro_22.jpg';
+import agro_41 from './agro_41.webp';
 
 import add_icon_white from './add_icon_white.png'
 import add_icon_green from './add_icon_green.png'
@@ -71,34 +77,66 @@ export const product_list = [
 export const item_list = [
     {
         id: "1",
-        name: "ag rice",
+        name: "Krishna Brand 25kg",
         image: agro_1,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 900,
+        description: "Premium Quality Rajabogam Ponni Rice",
+        category: "Rice"
+    },
+    {
+        id: "11",
+        name: "Ulavan Brand Rice 25kg",
+        image: agro_11,
+        price: 1000,
+        description: "Premium Quality Idly Rice",
         category: "Rice"
     },
     {
         id: "2",
-        name: "Ag oil",
+        name: "AG Coconut Oil 1Ltr",
         image: agro_2,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 300,
+        description: "Cold Pressed Chekku Coconut Oil",
+        category: "Oil"
+    },
+    {
+        id: "21",
+        name: "AG Groundnut Oil 1Ltr",
+        image: agro_21,
+        price: 250,
+        description: "Cold Pressed Chekku Groundnut Oil",
+        category: "Oil"
+    },
+    {
+        id: "22",
+        name: "AG Seasame Oil 1Ltr",
+        image: agro_22,
+        price: 350,
+        description: "Cold Pressed Chekku Seasame Oil",
         category: "Oil"
     },
     {
         id: "3",
-        name: "Ag Flour",
-        image: agro_1,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        name: "AG Rice Flour 500gm",
+        image: agro_3,
+        price: 70,
+        description: "Perfect for making soft, light baked goods.",
         category: "Flour"
     },
     {
         id: "4",
-        name: "Ag Spices",
-        image: agro_2,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        name: "AG Chilli Powder 500gm",
+        image: agro_40,
+        price: 210,
+        description: "simple blend of herbs and spices",
+        category: "Spices"
+    },
+    {
+        id: "41",
+        name: "AG Turmeric Powder 500gm",
+        image: agro_41,
+        price: 110,
+        description: "simple blend of herbs and spices",
         category: "Spices"
     }
 ]
