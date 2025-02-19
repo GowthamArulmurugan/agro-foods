@@ -1,0 +1,74 @@
+.agro-item{
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #00000015;
+    transition: 0.3s;
+    animation: fadeIn 1s;
+}
+
+.agro-item-image{
+    width:100%;
+    border-radius: 15px 15px 0px ;
+}
+
+.agro-item-info{
+    padding: 20px;
+}
+
+.agro-item-name-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.agro-item-name-rating p{
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.agro-item-name-rating img{
+    width:70px;
+}
+
+.agro-item-desc{
+    color: #676767;
+    font-size: 12px;
+}
+
+.agro-item-price{
+    color: #0c7a6a;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+
+.agro-item-img-container{
+    position: relative;
+}
+
+.agro-item-img-container .add{
+    width: 35px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.agro-item-counter{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    align-items: center;
+    gap:10px;
+    display: flex;
+    padding: 6px;
+    border-radius: 50px;
+    background-color: white;
+}
+.agro-item-counter img{
+    width: 30px;
+}
