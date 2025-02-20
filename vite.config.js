@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/agro-foods/', // 👈 Add this line
+  base: '/agro-foods/', 
 });
