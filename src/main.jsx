@@ -4,9 +4,9 @@ import './index.css'
 import App from './App.jsx'
 import {BrowserRouter} from 'react-router-dom'
 import StoreContextProvider from './components/context/StoreContext.jsx'
-
+const basename = "/agro-foods";
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <BrowserRouter basename={basename}>
   <StoreContextProvider>
     <App />
   </StoreContextProvider>
