@@ -1,0 +1,105 @@
+.hr{
+    margin: 10px 0px;
+    height: 2px;
+    border: #e2e2e2;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.app-download p{
+  margin: auto;  
+  max-width: 50%;
+  margin-top: 30px;
+  font-size: max(2vw,30px);
+  text-align: center;
+  font-weight: 500;
+  color: #0c7a6a;
+}
+
+.app-download h6{
+    text-align:justify;
+    color: #808080;
+    max-width: 1150px;
+    font-weight: normal;
+    font-size: max(1.3vw,10px);
+}
+
+.app-download-platforms{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+
+
+.app-download-platforms img{
+    /* height: 34vw;
+    width: 1000px;
+    max-width: 100%;
+    margin: 10px auto;
+    background-size: contain;
+    position: relative;
+    margin-bottom: 30px; */
+
+    height: 30vw;
+    width: 100%;
+    margin: 29px auto;
+    background-size: cover;
+    position: relative;
+}
+
+.app-download-platforms img:hover{
+    transform: scale(1.01);
+}
+/* Responsive Design for App Download Section */
+@media (max-width: 1200px) {
+
+    .app-download p{
+        max-width: 70%;
+        margin-top: 30px;
+        font-size: max(1vw,20px);
+        text-align: center;
+        font-weight: 500;
+        color: #0c7a6a;
+      }
+      
+
+    .app-download h6 {
+        max-width: 100%; /* Adjusts text width for better readability */
+        font-size: max(1.2vw, 10px);
+    }
+
+    .app-download-platforms img {
+        height: 40vw; /* Adjusts image size */
+        width: 100%; /* Reduces width */
+    }
+}
+
+@media (max-width: 750px) {
+
+    .app-download{
+        margin-top: 0px;
+    }
+    .app-download p {
+        font-size: max(3vw, 10px); /* Increases text size for smaller screens */
+    }
+
+    .app-download h6 {
+        max-width: 100%; /* Uses full width */
+        text-align: justify; /* Centers text */
+        font-size: max(1.2vw, 6px);
+
+    }
+
+    .app-download-platforms {
+        flex-direction: column; /* Stacks elements vertically */
+        align-items: center;
+    }
+
+    .app-download-platforms img {
+        height: 40vw;
+        width: 100%; 
+        margin-top: 10px;
+    }
+}

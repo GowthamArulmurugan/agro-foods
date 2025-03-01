@@ -18,7 +18,10 @@
 .cart-items-item img{
     width: 50px;
 }
-
+.cross img{
+    width: 1cm;
+    height: 1cm;
+}
 .cart hr{
     height: 1px;
     background-color: #e2e2e2;

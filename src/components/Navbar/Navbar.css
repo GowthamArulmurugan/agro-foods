@@ -2,7 +2,7 @@
     padding: 20px 0px;
     display: flex;
     justify-content: space-between;
-    align-items:end;
+    align-items:center;
 }
 
 .navbar .logo{
@@ -15,7 +15,7 @@
     list-style: none;
     gap:20px;
     color:#49557e;
-    font-size:20px;
+    font-size:18px;
 }
 
 .navbar-right{
@@ -33,11 +33,11 @@
     padding: 10px 30px;
     border-radius: 50px;
     cursor:pointer;
-    transition: 0.5s;
+    transition: .3s;
 }
 
 .navbar button:hover{
-    background-color:#05b99f;
+    background-color:#c2faf2;
 }
 
 .navbar .active{
@@ -49,8 +49,9 @@
     cursor: pointer;
 }
 
-.navbar-serch-icon{
-    position: relative;
+.navbar-right img{
+    height: 1cm;
+    width: 1cm;
 }
 
 .navbar-serch-icon .dot{
@@ -63,80 +64,99 @@
     right: -8px;
 }
 
+.navbar-profile{
+ position: relative;
+}
+
+.nav-profile-dropdown{
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}
+.navbar-profile:hover .nav-profile-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #0c7a6a;
+    padding: 12px 25px;
+    border-radius: 4px;
+    border: 1px solid rgb(28, 222, 14);
+    outline: 2px solid;
+    list-style: none;
+}
+.nav-profile-dropdown li{
+    display: flex;
+    color: #7cf6e4;
+    align-items: center;
+    grid-area: 10px;
+    cursor:pointer;
+}
+.nav-profile-dropdown img{
+    width: 20px;
+    height:20px;
+    margin: 7px;
+}
+
+.nav-profile-dropdown li:hover{
+    color: tomato;
+}
 @media (max-width:1050px){
     .navbar .logo{
         height: 0.9cm;
-        width: 240px;
+        width: 250px;
+        align-items: center;
     }
-
+    
     .navbar-menu{
         gap: 20px;
         font-size: 17px;
     }
 
+    .navbar-right img{
+        height: 0.8cm;
+        width: 1cm;
+    }
+    
+    .navbar button{
+        padding: 10px 30px;
+        border-radius: 50px;
+        font-size:14px;
+    }
+    
     .navbar-right{
         gap: 30px;
     }
 
     .navbar-right img{
-        width: 23px;
+        width: 22px;
     }
 
-    .navbar-right button{
-        padding: 8px 25px;
-    }
 }
 
-@media (max-width:900px){
-    .navbar .logo{
-        width: 200px;
-    }
-
-    .navbar-menu{
-        gap: 15px;
-        font-size: 16px;
-    }
-
-    .navbar-right{
-        gap: 20px;
-    }
-
-    .navbar-right img{
-        width: 20px;
-    }
-
-    .navbar-right button{
-        padding: 7px 20px;
-        font-size: 15px;
-    }
-}
 
 @media (max-width:750px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .navbar .logo{
+        width: 150px;
+    }
     .navbar-menu{
         display: none;
     } 
-}
-
-@media (max-width:450px){
-    .navbar .logo{
-        width: 130px;
-    }
-
-    .navbar-menu{
-        gap: 15px;
-        font-size: 16px;
-    }
-
     .navbar-right{
         gap: 20px;
     }
-
-    .navbar-right img{
-        width: 20px;
-    }
-
-    .navbar-right button{
+    .navbar button{
         padding: 5px 10px;
-        font-size: 15px;
+        border-radius: 50px;
+        font-size:10px;
+    }
+    .navbar-right img{
+        height: 0.5cm;
+        width: 0.5cm;
     }
 }

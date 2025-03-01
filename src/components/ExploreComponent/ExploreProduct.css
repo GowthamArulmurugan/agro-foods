@@ -1,7 +1,8 @@
 .explore-product{
     display:flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 28px;
+    margin-top: 10px;
 }
 .explore-product h1{
     text-align: center;
@@ -10,7 +11,7 @@
 }
 
 .explore-product-text{
-    text-align: center;
+    text-align: justify;
     color: #808080;
     max-width: 100%;
     font-size: max(1.3vw,16px);
@@ -24,8 +25,6 @@
     text-align: center;
     margin: 20px 0px;
     overflow-x: scroll;
-    padding-left: 10vw;
-    padding-right: 10vw;
 }
 
 .explore-product-list::-webkit-scrollbar{
@@ -33,8 +32,8 @@
 }
 
 .explore-product-list-item img{
-    height: 3cm;
-    width: 9vw;
+    height: 5cm;
+    width: 5cm;
     min-width: 80px;
     cursor:pointer;
     border-radius:50%;
@@ -64,6 +63,50 @@
 @media (max-width:1050px){
     .explore-product-text{
         max-width: 100%;
-        font-size: 14px;
+        font-size: 10px;
     }
+    .explore-product-list-item p{
+        font-size: max(1.4vw,29px);
+    }
+    
+}
+
+@media (max-width:750px){
+
+    .explore-product-list-item .active{
+        border:2px solid #0c7a6a;
+        padding: 2px;
+    }
+
+    .explore-product{
+        margin-top: 3px;
+    }
+    .explore-product-text{
+        max-width: 100%;
+        font-size: 10px;
+        margin-top: 0px;
+    }
+    .explore-product-list-item p{
+        
+        color: #747474;
+        font-size: max(1.4vw,25px);
+        cursor: pointer;
+    }
+    .explore-product-list-item img{
+        height: 2cm;
+        width: 2cm;
+    }
+    .explore-product h1{
+        text-align: center;
+        font-size: max(1.4vw,19px);
+        font-weight:500;
+        margin: 5px auto;
+    }
+    .explore-product-list-item p{
+        margin: 5px auto;
+        font-size: max(1.4vw,10px);
+      
+    }
+    
+    
 }

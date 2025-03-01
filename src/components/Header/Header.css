@@ -1,73 +1,126 @@
-.header{
-    height:32.20vw;
-    width: 76vw;
-    margin: 28px auto;
-    background: url('/banner.png') no-repeat;
-    background-size: contain;
+.header {
+    height: 34vw; 
+    margin: 30px auto;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
     position: relative;
     border-radius: 30px;
+    transition: background-image 1s ease-in-out; /* Smooth transition */
 }
 
-.header-contents{
+
+.header-contents {
     position: absolute;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: start;
-    gap:1.6vw;
-    max-width:50%;
-    bottom:20%;
-    top:10%;
-    left:4vw;
-    animation:fadeIn 3s;
+    gap: 1.6vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 7vw;
+    animation: fadeIn 3s;
 }
 
-.header-contents h2{
-    font-weight:500;
-    color:rgb(254, 226, 62);
-    font-size: max(4.5vw,22px);
-}
-
-.header-contents h1{
-    color: white;
-    font-size: max(3.5vw,22px);
-}
-
-.header-icon img{
-    padding:9px;
-    justify-content: space-between;
-}
-
-.header-contents button{
-    border:none;
-    color:#0c7a6a;
+.header-contents h2 {
     font-weight: 500;
-    padding:1vw 2.3vw;
+    color: #e6ebeb;
+    text-shadow: 0 0 10px rgba(58, 222, 126, 0.8),  /* Soft gold glow */
+    0 0 20px rgb(68, 237, 133),  /* Orange-gold glow */
+    0 0 30px rgb(3, 92, 57);  /* Deep golden glow */
+    font-size: max(4.5vw, 30px);
+}
+
+.header-contents h1 {
+    color: #fef101;
+    font-size: 3vw;
+    text-shadow: 0 0 10px rgba(58, 222, 126, 0.8),  /* Soft gold glow */
+                 0 0 20px rgb(68, 237, 133),  /* Orange-gold glow */
+                 0 0 30px rgb(3, 92, 57);  /* Deep golden glow */
+}
+
+
+
+.header-icon img {
+    padding: 10px;
+    margin-right: 20px;
+    justify-content: space-between;
+    border-radius: 50%; 
+    height: 2cm;
+    width: 2cm;
+    gap: 13px;
+}
+
+.header-icon img:hover {
+    box-shadow: 0 0 15px rgba(58, 222, 126, 0.8); /* Yellow glow */
+}
+
+
+.header-contents button {
+    box-shadow: 0 0 10px rgba(58, 222, 126, 0.8),  /* Soft gold glow */
+                 0 0 20px rgb(91, 141, 110),  /* Orange-gold glow */
+                 0 0 30px rgb(103, 179, 148);  /* Deep golden glow */
+    margin-left:8%;
+    margin-top: 2%;
+    border: none;
+    color: #0c7a6a;
+    font-weight: 700;
+    padding: 0.7vw 2.0vw;
     background-color: white;
-    font-size: max(1vw,13px);
-    border-radius:50px;
+    font-size: max(1.5vw, 10px);
+    border-radius: 50px;
+    transition: box-shadow 0.3s ease, transform 0.2s ease; /* Smooth transition */
 }
 
-@media (max-width:1050px){
-.header-contents{
-    max-width: 45%;
-}
+/* Hover Effect */
+.header-contents button:hover {
+    box-shadow: 0 0 15px rgba(12, 122, 106, 0.8); /* Glow effect */
+    transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
-@media (max-width:750px){
-    
-    .header-contents{
-        max-width: 65%;
+
+/* Responsive Design */
+@media (max-width: 1050px) {
+    .header-contents {
+        width: 45%; /* Ensures proper scaling on smaller screens */
+        bottom: 4%;
+    }
+    .header-contents img {
+        height: 1.5cm;
+        width: 1.5cm;
+    }
+}
+
+@media (max-width: 750px) {
+    .header {
+        height: 40vw; 
+        margin: 10px auto;
+    }
+
+    .header-contents {
+        max-width: 69%;
+        bottom: 10%;
+    }
+
+    .header-contents button {
+        padding: 1vw 2vw;
+        font-size: max(1.5vw, 6px);
     }
 
     .header-contents p {
         display: none;
     }
 
-    .header-contents button{
-        padding: 1vw 3vw;
+    .header-contents h2 {
+        font-weight: 500;
+        color: #e6ebeb;
+        font-size: max(4.5vw, 10px);
     }
-    .header-contents img{
-        height:1cm;
-        width: 1cm;
+
+    .header-contents img {
+        height: 0.4cm;
+        width: 0.4cm;
+        padding: 0.2px;
+        
     }
 }

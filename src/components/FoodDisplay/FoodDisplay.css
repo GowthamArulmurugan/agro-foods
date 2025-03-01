@@ -2,9 +2,10 @@
     margin-top: 30px;
 }
 
-.item-display h2{
-    font-size: max(2vw 24);
-    font-weight: 600;
+.item-display h1{
+    text-align: center;
+    color: #0c7a6a;
+    font-weight:500;
 }
 
 .item-display-list{
@@ -15,9 +16,10 @@
     row-gap: 50px;
 }
 
-@media (max-width:1850px){
-    .item-display h2{
-        font-size: max(0vw 22);
-        font-weight: 200;
+@media (max-width:750px){
+    .item-display h1{
+        text-align: center;
+    color: #0c7a6a;
+    font-weight:500;
     }
 }

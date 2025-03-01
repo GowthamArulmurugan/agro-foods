@@ -6,6 +6,7 @@ import Flour from './Flour.png'
 import Oil from './Oil.png'
 import Spices from './Spices.png'
 import banner from './banner.png'
+import banner1 from './banner1.png'
 import agro_1 from './agro_1.jpeg';
 import agro_2 from './agro_2.jpg';
 import agro_3 from './agro_3.jpg';
@@ -19,7 +20,7 @@ import add_icon_white from './add_icon_white.png'
 import add_icon_green from './add_icon_green.png'
 import remove_icon_red from './remove_icon_red.png'
 import app_store from './app_store.png'
-import play_store from './play_store.png'
+import play_store from './play_store.jpg'
 import linkedin_icon from './linkedin_icon.png'
 import facebook_icon from './facebook_icon.png'
 import twitter_icon from './twitter_icon.png'
@@ -31,10 +32,13 @@ import bag_icon from './bag_icon.png'
 import logout_icon from './logout_icon.png'
 import parcel_icon from './parcel_icon.png'
 import about from './about.jpg'
+import abt from './about.png'
 
 export const assets = {
     about,
+    abt,
     banner,
+    banner1,
     logo,
     basket_icon,
     search_icon,
